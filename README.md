@@ -1,16 +1,54 @@
-# React + Vite
+# CloudFolio - Static Portfolio Website
+CloudFolio is a modern **static portfolio website** built with **React, Vite, and Tailwind CSS**. It showcases products with a search and category filter, and it demonstrates **advanced DevOps practices** by being containerized with **Docker** and ready for **cloud hosting with Terraform and AWS**.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features
+- Responsive layout built with **Tailwind CSS**  
+- **React components** for Header, Hero, and Product Grid  
+- Search and category filter for products  
+- **Dockerized** with Nginx for production-ready deployment  
+- Ready for **AWS S3 + CloudFront hosting** with Terraform  
+- Can be deployed automatically using **GitHub Actions CI/CD**
 
-Currently, two official plugins are available:
+## Tech Stack
+- **Frontend:** React + Vite + Tailwind CSS  
+- **Containerization:** Docker + Nginx  
+- **Hosting (Optional):** AWS S3 + CloudFront  
+- **Infrastructure as Code:** Terraform  
+- **CI/CD:** GitHub Actions
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation & Running Locally
+1. Clone the repository and navigate into it:
+```bash
+git clone https://github.com/wilson7777777/cloudfolio-static-site.git
+cd cloudfolio-static-site
 
-## React Compiler
+npm install
+npm run dev
+docker build -t cloudfolio-static-site .
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+cloudfolio-static-site/
+├─ src/
+│  ├─ App.jsx
+│  ├─ index.css
+│  └─ components/
+│     ├─ Header.jsx
+│     ├─ Hero.jsx
+│     └─ ProductGrid.jsx
+├─ package.json
+├─ Dockerfile
+└─ vite.config.js
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+This version now has:  
+
+- All instructions in one **continuous flow**  
+- All `bash` commands in one place  
+- URLs, folder structure, Docker commands, and npm commands all **together**  
+- No jumping between sections  
+
+You can now:
+
+```bash
+nano README.md
